@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: zdtoken-config
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zdtoken/zdtoken-config.git
+          search-paths: respo
+          username: jiguiquan@163.com
+          password: An831121
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
