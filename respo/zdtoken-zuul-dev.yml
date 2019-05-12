@@ -1,6 +1,6 @@
 spring:
   application:
-    name: itoken-zuul
+    name: zdtoken-zuul
   boot:
     admin:
       client:

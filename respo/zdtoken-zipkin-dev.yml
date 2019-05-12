@@ -1,6 +1,6 @@
 spring:
   application:
-    name: itoken-zipkin
+    name: zdtoken-zipkin
   boot:
     admin:
       client:
